@@ -1,9 +1,7 @@
-const importLogger=require('./logger')
 
-importLogger.logEntry("I'm the called from app.js");
+//function example
+var tempVar=function SayHello(){
+    return "Hello";
+}
 
-var printText=function Hello(){
-    console.log("New Hello");
-} 
-
-console.log(printText);
+console.log(tempVar);
