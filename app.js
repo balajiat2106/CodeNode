@@ -1,3 +1,4 @@
+console.log(__filename);
 var CallLogger=require('./logger');
 
 var retVar="Hello";

@@ -1,3 +1,6 @@
+console.log(__dirname);
+console.log(__filename);
+
 function logMessage(temp){
 console.log(temp);
     
