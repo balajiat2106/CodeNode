@@ -1,7 +1,7 @@
 console.log(__dirname);
 console.log(__filename);
-var loggerEvent=require('./loggerEvent');
-var ClsLogMessage=new loggerEvent();
+var LoggerEvent=require('./loggerEvent');
+var ObjLogMessage=new LoggerEvent();
 
 function logMessage(temp){
 console.log(temp);
@@ -12,9 +12,11 @@ function logAppendedMessage(temp){
     return temp+": Appended";
 }
 
-ClsLogMessage.on('logMessageReturnsBool',(args)=>{
-    console.log("Message Logged"+args);
+ObjLogMessage.on('logMessageReturnsBool',(args)=>{
+    console.log('Message Logged'+ args.Status);
 });
+
+ObjLogMessage.logMessageWithParams("Message from LoggerEvent");
 
 //export multiple modules
 module.exports={

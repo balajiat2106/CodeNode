@@ -1,10 +1,10 @@
 var EventEmitter=require('events');
 
-class ClsLogMessage extends EventEmitter{
+class LoggerEvent extends EventEmitter{
     logMessageWithParams(args){
         console.log(args);
-        this.emit('logMessageReturnsBool',{Id:1,Status:true});
+        this.emit('logMessageReturnsBool', {Id:1,Status:true});
     }    
 }
 
-module.exports=ClsLogMessage;
+module.exports=LoggerEvent;
