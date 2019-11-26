@@ -12,7 +12,7 @@ if(req.url==='/api/'){
 }
 });
 
-server.on('connection', (socket)=>{
+server.on('connection', ()=>{
     console.log('New connection...');
 });
 
